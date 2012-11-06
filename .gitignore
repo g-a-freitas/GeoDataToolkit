@@ -13,7 +13,7 @@ obj
 _ReSharper*/
 
 # test scripts
-/src/Scripts/Tests/Results
+GeoDataToolkit/Scripts/Results
 
 # merged generated files
 *.orig

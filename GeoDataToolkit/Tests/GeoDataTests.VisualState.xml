@@ -5,17 +5,19 @@
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1000]C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataTests.nunit" Expanded="true" />
-    <Node UniqueName="[0-1012]C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataToolkit.Tests\bin\x86\Debug\GeoDataToolkit.Tests.dll" Expanded="true" />
-    <Node UniqueName="[0-1013]GeoDataToolkit" Expanded="true" />
-    <Node UniqueName="[0-1014]GeoDataToolkit.Tests" Expanded="true" />
-    <Node UniqueName="[0-1015]GeoDataToolkit.Tests.Geometries" Expanded="true" />
+    <Node UniqueName="[0-1017]C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataToolkit.Tests\bin\x86\Debug\GeoDataToolkit.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1018]GeoDataToolkit" Expanded="true" />
+    <Node UniqueName="[0-1019]GeoDataToolkit.Tests" Expanded="true" />
+    <Node UniqueName="[0-1020]GeoDataToolkit.Tests.Geometries" Expanded="true" />
     <Node UniqueName="[0-1004]GeoDataToolkit.Tests.Geometries.GeometryFactoryTests" Expanded="true" />
+    <Node UniqueName="[0-1012]GeoDataToolkit.Tests.Geometries.LineStringTests" Expanded="true" />
+    <Node UniqueName="[0-1014]GeoDataToolkit.Tests.Geometries.MapPointTests" Expanded="true" />
     <Node UniqueName="[0-1001]GeoDataToolkit.Tests.Geometries.PolygonTests" Expanded="true" />
     <Node UniqueName="[0-1010]GeoDataToolkit.Tests.Geometries.PolylineTests" Expanded="true" />
-    <Node UniqueName="[0-1026]C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataToolkit.FGDB.Tests\bin\x86\Debug\GeoDataToolkit.FGDB.Tests.dll" Expanded="true" />
-    <Node UniqueName="[0-1027]GeoDataToolkit" Expanded="true" />
-    <Node UniqueName="[0-1028]GeoDataToolkit.FGDB" Expanded="true" />
-    <Node UniqueName="[0-1029]GeoDataToolkit.FGDB.Tests" Expanded="true" />
-    <Node UniqueName="[0-1016]GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests" Expanded="true" />
+    <Node UniqueName="[0-1031]C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataToolkit.FGDB.Tests\bin\x86\Debug\GeoDataToolkit.FGDB.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1032]GeoDataToolkit" Expanded="true" />
+    <Node UniqueName="[0-1033]GeoDataToolkit.FGDB" Expanded="true" />
+    <Node UniqueName="[0-1034]GeoDataToolkit.FGDB.Tests" Expanded="true" />
+    <Node UniqueName="[0-1021]GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests" Expanded="true" />
   </Nodes>
 </VisualState>
