@@ -1,20 +1,19 @@
 # Visual Studio
-[Debug/
-[Release/
 *.sln.cache
 *.suo
 *.sln.DotSettings.user
 *.DotSettings.user
 *.csproj.user
-*/Bin
-*/bin
-*/Obj
-*/obj
+bin
+obj
+*.suo
+*.user
 
 # Resharper
-*[Rr]e[Ss]harper.user
-_ReSharper.*/
-*resharper.user
+_ReSharper*/
+
+# test scripts
+/src/Scripts/Tests/Results
 
 # merged generated files
 *.orig
