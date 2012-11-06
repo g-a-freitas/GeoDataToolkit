@@ -1,0 +1,20 @@
+# Visual Studio
+[Debug/
+[Release/
+*.sln.cache
+*.suo
+*.sln.DotSettings.user
+*.DotSettings.user
+*.csproj.user
+*/Bin
+*/bin
+*/Obj
+*/obj
+
+# Resharper
+*[Rr]e[Ss]harper.user
+_ReSharper.*/
+*resharper.user
+
+# merged generated files
+*.orig
