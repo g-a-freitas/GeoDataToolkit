@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataTests.nunit" total="17" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-11-06" time="17:19:45">
+  <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5456" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.2\bin" machine-name="NOTE-IMG51" user="gmoreira" user-domain="IMG" />
+  <culture-info current-culture="pt-BR" current-uiculture="pt-BR" />
+  <test-suite type="Project" name="C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataTests.nunit" executed="True" result="Success" success="True" time="2.551" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataToolkit.Tests\bin\x86\Debug\GeoDataToolkit.Tests.dll" executed="True" result="Success" success="True" time="0.242" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="GeoDataToolkit" executed="True" result="Success" success="True" time="0.242" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.241" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Geometries" executed="True" result="Success" success="True" time="0.241" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="GeometryFactoryTests" executed="True" result="Success" success="True" time="0.209" asserts="0">
+                        <results>
+                          <test-case name="GeoDataToolkit.Tests.Geometries.GeometryFactoryTests.CreateEnvelope" executed="True" result="Success" success="True" time="0.165" asserts="0" />
+                          <test-case name="GeoDataToolkit.Tests.Geometries.GeometryFactoryTests.CreatePolygon" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                          <test-case name="GeoDataToolkit.Tests.Geometries.GeometryFactoryTests.CreatePolyline" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="GeoDataToolkit.Tests.Geometries.GeometryFactoryTests.TestCreatePoint" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                          <test-case name="GeoDataToolkit.Tests.Geometries.GeometryFactoryTests.TestCreatePointSpatialRef" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="PolygonTests" executed="True" result="Success" success="True" time="0.020" asserts="0">
+                        <results>
+                          <test-case name="GeoDataToolkit.Tests.Geometries.PolygonTests.TestMultiPartPolygon" executed="True" result="Success" success="True" time="0.015" asserts="0" />
+                          <test-case name="GeoDataToolkit.Tests.Geometries.PolygonTests.TestSimplePolygon" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="PolylineTests" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                        <results>
+                          <test-case name="GeoDataToolkit.Tests.Geometries.PolylineTests.TestPolyline" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="Assembly" name="C:\Projetos\GeoDataToolkit\GeoDataToolkit\Tests\GeoDataToolkit.FGDB.Tests\bin\x86\Debug\GeoDataToolkit.FGDB.Tests.dll" executed="True" result="Success" success="True" time="2.288" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="GeoDataToolkit" executed="True" result="Success" success="True" time="2.287" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="FGDB" executed="True" result="Success" success="True" time="2.287" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="2.287" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="DatasetReaderIntegrationTests" executed="True" result="Success" success="True" time="2.286" asserts="0">
+                        <results>
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestInitializeFailed" executed="True" result="Success" success="True" time="0.408" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestLoadDataWithoutInitializing" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestLoadingTable" executed="True" result="Success" success="True" time="0.080" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestReadFeatureAttributes" executed="True" result="Success" success="True" time="0.046" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestReadLineGeometryFeatures" executed="True" result="Success" success="True" time="0.038" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestReadPointGeometryFeatures" executed="True" result="Success" success="True" time="0.035" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestReadPolygonGeometryFeatures" executed="True" result="Success" success="True" time="1.378" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestReadSpatialReferenceSad96" executed="True" result="Success" success="True" time="0.026" asserts="0" />
+                          <test-case name="GeoDataToolkit.FGDB.Tests.DatasetReaderIntegrationTests.TestReadSpatialReferenceWgs84" executed="True" result="Success" success="True" time="0.027" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

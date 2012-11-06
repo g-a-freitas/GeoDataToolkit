@@ -1,0 +1,7 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Default" />
+  <Config name="Default" binpathtype="Auto">    
+	<assembly path="GeoDataToolkit.Tests\bin\x86\Debug\GeoDataToolkit.Tests.dll" />
+	<assembly path="GeoDataToolkit.FGDB.Tests\bin\x86\Debug\GeoDataToolkit.FGDB.Tests.dll" />
+  </Config>
+</NUnitProject>
