@@ -54,9 +54,7 @@ namespace GeoDataToolkit.Geometries
 			var minX = points.Select(x => x.X).Min();
 			var minY = points.Select(x => x.Y).Min();
 
-			var envelope = new Envelope(maxX, maxY, minX, minY);
-			
-			return envelope;
+			return new Envelope(maxX, maxY, minX, minY);
 		}
 	}
 }
