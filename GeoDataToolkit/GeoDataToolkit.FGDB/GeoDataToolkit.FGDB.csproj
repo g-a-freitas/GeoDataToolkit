@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7090B83E-0678-4F3A-BF74-4506B85F89A7}</ProjectGuid>
+    <ProjectGuid>{BD8CC631-0FC1-4136-B861-EBCA135AA1D8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GeoDataToolkit.FGDB</RootNamespace>
@@ -82,7 +82,7 @@
   <ItemGroup>
     <ProjectReference Include="..\GeoDataToolkit\GeoDataToolkit.csproj">
       <Project>{FE6E5FE1-4CB3-4154-ADAD-BE6837F75C9B}</Project>
-      <Name>GeoDataToolkit</Name>
+      <Name>GeoDataToolkit %28Client\GeoDataToolkit\GeoDataToolkit%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

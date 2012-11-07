@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{052C7ADF-BC8C-4B11-8DD1-B1F3E063B5C4}</ProjectGuid>
+    <ProjectGuid>{A0147816-FA5C-4E15-9FCF-C8A19CFB82A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GeoDataToolkit.FGDB.Tests</RootNamespace>
@@ -77,12 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\GeoDataToolkit.FGDB\GeoDataToolkit.FGDB.csproj">
-      <Project>{7090B83E-0678-4F3A-BF74-4506B85F89A7}</Project>
+      <Project>{BD8CC631-0FC1-4136-B861-EBCA135AA1D8}</Project>
       <Name>GeoDataToolkit.FGDB</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\GeoDataToolkit\GeoDataToolkit.csproj">
       <Project>{FE6E5FE1-4CB3-4154-ADAD-BE6837F75C9B}</Project>
-      <Name>GeoDataToolkit</Name>
+      <Name>GeoDataToolkit %28Client\GeoDataToolkit\GeoDataToolkit%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -278,8 +278,11 @@
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\CopyFileGDBAPI.bat" $(PlatformName) "$(SolutionDir)"</PreBuildEvent>
+  <PropertyGroup Condition="'$(SolutionName)'=='GeoDataToolkit'">
+    <PreBuildEvent>"$(SolutionDir)\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\CopyFileGDBAPI.bat" $(PlatformName)</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(SolutionName)'=='ImportadorDashboardSondagem'">
+    <PreBuildEvent>"$(SolutionDir)\GeoDataToolkit\GeoDataToolkit\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\CopyFileGDBAPI.bat" $(PlatformName)</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

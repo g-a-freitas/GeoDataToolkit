@@ -2,26 +2,25 @@ ECHO =================================================
 ECHO Copying FileGeodatabase DLLs to bin dir
 ECHO -------------------------------------------------
 ECHO Current Dir: %CD%
+ECHO Batch Dir: %~dp0
 
-Set SOLUTION_DIR=%2
-
-ECHO Solution Dir: %SOLUTION_DIR%
+Set BATCHFILE_DIR=%~dp0
 
 IF (%1) EQU (x86) (
-  xcopy /Y /Q /D %SOLUTION_DIR%\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\x86\FileGDBAPI*.*
-  xcopy /Y /Q /D %SOLUTION_DIR%\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\x86\Esri.FileGDB*.*
+  xcopy /Y /Q /D %BATCHFILE_DIR%\x86\FileGDBAPI*.*
+  xcopy /Y /Q /D %BATCHFILE_DIR%\x86\Esri.FileGDB*.*
   GOTO :EOF
 )
 
 IF (%1) EQU (AnyCPU) (
-  xcopy /Y /Q /D %SOLUTION_DIR%\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\x86\FileGDBAPI*.*
-  xcopy /Y /Q /D %SOLUTION_DIR%\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\x86\Esri.FileGDB*.*
+  xcopy /Y /Q /D %BATCHFILE_DIR%\x86\FileGDBAPI*.*
+  xcopy /Y /Q /D %BATCHFILE_DIR%\x86\Esri.FileGDB*.*
   GOTO :EOF
 )
 
 IF (%1) EQU (x64) (
-  xcopy /Y /Q /D %SOLUTION_DIR%\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\x64\FileGDBAPI*.*
-  xcopy /Y /Q /D %SOLUTION_DIR%\GeoDataToolkit.FGDB\Libraries\EsriFileGeodatabaseAPI\x64\Esri.FileGDB*.*
+  xcopy /Y /Q /D %BATCHFILE_DIR%\x64\FileGDBAPI*.*
+  xcopy /Y /Q /D %BATCHFILE_DIR%\x64\Esri.FileGDB*.*
   GOTO :EOF
 )
 

@@ -76,7 +76,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\GeoDataToolkit\GeoDataToolkit.csproj">
       <Project>{FE6E5FE1-4CB3-4154-ADAD-BE6837F75C9B}</Project>
-      <Name>GeoDataToolkit</Name>
+      <Name>GeoDataToolkit %28Client\GeoDataToolkit\GeoDataToolkit%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
