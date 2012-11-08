@@ -1,9 +1,29 @@
 Introduction
 ===========
 
-**GeoDataToolkit** is a toolkit library to manipulate data in ESRI geographic datasets, based on filesystem.
+**GeoDataToolkit** is a toolkit library developed by Imagem to manipulate data in ESRI geographic datasets, based on filesystem.
 Its design intends to abstract the ESRI APIs details and references, supplying general interfaces for operations like reading and writing data in a database.
 The project is based on Dependency Injection, currently using NInject.
+
+Example
+-----------
+
+```c#
+var datasetReader = _container.Resolve&lt;IDatasetReader&gt;();
+datasetReader.SetSetting("GDB_PATH", "Resources/FileGDB/FileGeoDBTests.gdb");
+datasetReader.Initialize();
+var featureSet = datasetReader.ReadFeatureSet("\\TableSample");
+
+foreach (var row in featureSet.GetFeatures())
+{
+  var stringField = row.GetString("EMPRESA");
+	var polygon = (IMultiParts) row.GetGeometry();
+	var verticesCount = polygon.Parts[0].Vertices.Count;
+}
+
+var projectionWKID = featureSet.SpatialReference.Wkid;
+```
+
 
 Roadmap
 -----------
@@ -27,3 +47,4 @@ This is the current development environment we are using:
 Resources
 ---------
 *	[ESRI FileGeodatabase API](http://resources.arcgis.com/content/geodatabases/10.0/file-gdb-api)
+* Post about [Filegeodatabase API and the GeoDataTookit] (http://www.gis4dev.com.br/?p=536) (in Portuguese)
