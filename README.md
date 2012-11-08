@@ -9,7 +9,7 @@ Example
 -----------
 
 ```c#
-var datasetReader = _container.Resolve&lt;IDatasetReader&gt;();
+var datasetReader = _container.Resolve<IDatasetReader>();
 datasetReader.SetSetting("GDB_PATH", "Resources/FileGDB/FileGeoDBTests.gdb");
 datasetReader.Initialize();
 var featureSet = datasetReader.ReadFeatureSet("\\TableSample");
