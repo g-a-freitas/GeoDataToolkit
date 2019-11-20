@@ -90,7 +90,7 @@ namespace GeoDataToolkit.FGDB.Accessors.Converter
 				var points = linearRing.Vertices;
 				for (var j = partStart; j <= partEnd; j++)
 				{
-					var mapPoint = new GeometryFactory().CreatePoint(multiPart.Points[i].x, multiPart.Points[i].y);
+					var mapPoint = new GeometryFactory().CreatePoint(multiPart.Points[j].x, multiPart.Points[j].y);
 
 					points.Add(mapPoint);
 				}
